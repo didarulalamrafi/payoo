@@ -20,7 +20,7 @@ cashoutBtn.addEventListener("click", function(){
     
     // set new balance
     const newBalance = Number(balanceAmount) - Number(cashoutAmount);
-    if(newBalance < 0 ){
+    if(newBalance < 0 || typeof newBalance !== Number ){
         alert("Invalid Amount");
         return;
     }    
