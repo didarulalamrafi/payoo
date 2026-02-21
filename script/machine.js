@@ -25,7 +25,7 @@ function showOnly(id){
     const addMoney = document.getElementById('add-money');
     const cashout = document.getElementById('cashout');
     addMoney.classList.add('hidden');
-    cashout.classList.add('hiddengit commit -m "update from second pc"');
+    cashout.classList.add('hidden');
 
     const selecte = document.getElementById(id);
     selecte.classList.remove('hidden');
