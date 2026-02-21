@@ -29,4 +29,7 @@ function showOnly(id){
 
     const selecte = document.getElementById(id);
     selecte.classList.remove('hidden');
-}
+};
+
+// History *****************
+
