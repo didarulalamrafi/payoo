@@ -12,7 +12,7 @@ cashoutBtn.addEventListener("click", function () {
   console.log(valueFromAmount);
 
   // Balance calculate
-  const currentBalance = gelBalance();
+  const currentBalance = getBalance();
   console.log(currentBalance);
 
   const newBalance = currentBalance - Number(valueFromAmount);
