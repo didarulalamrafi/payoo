@@ -20,3 +20,13 @@ function setBalance(value){
     const balanceElement= document.getElementById('balance');
     balanceElement.innerText = value;
 }
+
+function showOnly(id){
+    const addMoney = document.getElementById('add-money');
+    const cashout = document.getElementById('cashout');
+    addMoney.classList.add('hidden');
+    cashout.classList.add('hiddengit commit -m "update from second pc"');
+
+    const selecte = document.getElementById(id);
+    selecte.classList.remove('hidden');
+}
