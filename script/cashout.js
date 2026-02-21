@@ -10,12 +10,12 @@ cashoutBtn.addEventListener("click", function(){
     }
     const valueFromAmount = getValueFromInput('cashout-amount');
     console.log(valueFromAmount);
-    const balanceElement = document.getElementById('balance');
-    const balanceAmount = balanceElement.innerText;
+
+    // Balance calculate
+    const currentBalance = gelBalance();
+    console.log(currentBalance);
     
-    console.log(balanceAmount);
-    
-    const newBalance = Number(balanceAmount) - Number(valueFromAmount);
+    const newBalance = currentBalance - Number(valueFromAmount);
     if(newBalance < 0){
         alert("Invalid Amount");
         return;
@@ -25,12 +25,14 @@ cashoutBtn.addEventListener("click", function(){
     console.log(ValueFromPin);
     if(ValueFromPin == 1234){
         alert("Cash out Successful");
-        balanceElement.innerText = newBalance;
+        setBalance(newBalance);
     }
     else{
         alert("Invalid Pin");
     }
 });
+
+
 
 
 

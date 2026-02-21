@@ -5,3 +5,18 @@ function getValueFromInput(id){
     console.log(id, value);
     return value;
 }
+
+// Balance Machine
+
+function gelBalance(){
+    const balanceElement = document.getElementById('balance');
+    const balance = balanceElement.innerText;
+    console.log("Current balance",balance);
+    return Number(balance);
+}
+
+// Balance set machine
+function setBalance(value){
+    const balanceElement= document.getElementById('balance');
+    balanceElement.innerText = value;
+}

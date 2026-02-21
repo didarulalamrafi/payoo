@@ -80,6 +80,37 @@
     </section>
 
     <section class="w-11/12 mx-auto">
+        <h2 class="font-bold text-2xl mb-1 pl-4">Add Money</h2>
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+
+                    <select id="select-bank" class="select rounded-full bg-gray-100 mb-4 w-full">
+                        <option disabled selected>Select a Bank</option>
+                        <option value="UCB">UCB</option>
+                        <option value="IBBL">IBBL</option>
+                        <option value="DBBL">DBBL</option>
+                    </select>
+
+                    <label class="label font-bold text-neutral">Bank Account Number</label>
+                    <input type="number" maxlength="11" minlength="11" id="add-money-number"
+                        class="input rounded-full bg-gray-100 mb-4 w-full" placeholder="Enter Bank Account number" />
+
+                    <label class="label font-bold text-neutral">Add Money Amount</label>
+                    <input type="text" maxlength="11" minlength="11" id="add-money-amount"
+                        class="input rounded-full bg-gray-100 mb-4 w-full" placeholder="Enter add Money amount" />
+
+                    <label class="label font-bold text-neutral">Pin number</label>
+                    <input type="password" maxlength="4" id="add-money-pin"
+                        class="input rounded-full bg-gray-100 w-full" placeholder="4 digit pin number" />
+                    <div></div>
+                    <button id="add-money-btn" class="btn btn-primary rounded-full mt-4 font-bold">Add Money</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-11/12 mx-auto hidden">
         <h2 class="font-bold text-2xl mb-4">Cash Out</h2>
         <div class="card bg-base-100 w-full shadow mt-5 rounded-2xl">
             <div class="card-body">
@@ -104,6 +135,7 @@
     <script src="./script/machine.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/cashout2.js"></script>
+    <script src="./script/add-money.js"></script>
 </body>
 
 </html>
